@@ -1,0 +1,98 @@
+.header{
+    flex: 0.3;
+    background-color: #0E0E0E;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+.buttons-container button{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.matches-button{
+    background-color: #141414;
+    color: white;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.standings-button {
+    background-color: #141414;
+    color: white;
+    border: 1px solid white;
+}
+
+.statsLeaders-button{
+    background-color: #141414;
+    color: white;
+    border: 1px solid white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.matches-button:hover,
+.standings-button:hover,
+.statsLeaders-button:hover {    
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.matches-button-selected {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.standings-button-selected {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.statsLeaders-button-selected {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+@media (max-width: 650px) {
+    .buttons-container button {
+        font-size: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .buttons-container button {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+

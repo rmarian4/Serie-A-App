@@ -1,0 +1,39 @@
+td {
+    font-weight: 700;
+}
+
+.standings {
+    display: flex;
+    justify-content: center;
+    background-color: #0E0E0E;
+    flex:1;
+}
+
+.table-container {
+    flex: 0.8;
+    /* overflow: scroll; */
+}
+
+.teamCell {
+    display: flex;
+    align-items: center;
+}
+
+.border-left {
+    border-left: 1px solid rgb(70, 69, 69);
+}
+
+img {
+    object-fit: contain;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 30px;
+    background: none;
+}
+
+@media (max-width: 680px) {
+    .table-container {
+        overflow: scroll;
+    }
+}
+

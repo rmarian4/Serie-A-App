@@ -1,0 +1,42 @@
+.loading {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E0E0E;
+    /* overflow: scroll; */
+}
+
+.loadingContainer,
+.loadingMatchStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingMatchStats {
+    flex: 1;
+    background-color: #141414;
+}
+
+.loadingContainer img {
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 70px;
+    object-fit: contain;
+    width: 100px;
+}
+
+
+@media (max-height: 475px) {
+    .loading {
+        overflow: scroll;
+    }
+
+    .loadingContainer img {
+        width: 35px;
+        margin-bottom: 40px;
+    }
+}

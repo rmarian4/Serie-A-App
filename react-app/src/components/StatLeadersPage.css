@@ -1,0 +1,36 @@
+.statLeadersPage {
+    padding-bottom: 50px;
+    background-color: #0E0E0E;
+}
+
+.statsLeaderRow {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.messageContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E0E0E;
+}
+
+.messageContainer h1 {
+    color: white;
+    margin: 20px;
+}
+
+@media (max-width: 1150px) {
+    .statsLeaderRow {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 318px) {
+    .statsLeaderRow td {
+        font-size: 7px;
+    }
+
+}

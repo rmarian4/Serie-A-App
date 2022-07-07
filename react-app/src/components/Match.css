@@ -1,0 +1,244 @@
+* .match {
+    background-color: #141414;
+}
+
+* .statsCard {
+    background-color: #141414;
+}
+
+.statsCard {
+    display: flex;
+    border: 2px solid white;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.5;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    color: white;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 0.5;
+}
+
+.matchShowStats  {
+    align-self: flex-start;
+}
+
+.matchDetails {
+    display: flex;
+    align-items: top;
+}
+
+
+.homeTeamContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 15rem;
+}
+
+
+.awayTeamContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 15rem;
+}
+
+
+.homeTeamInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.awayTeamInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.homeTeamContainer img,
+.awayTeamContainer img {
+    margin: 0;
+} 
+
+.awayTeamGoalScorers {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.awayTeamGoalScorers p {
+    margin-bottom: 10px;
+}
+
+.homeTeamGoalScorers {
+    display: flex;
+    margin-right: 25px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.homeTeamGoalScorers p {
+    margin-bottom: 10px;
+}
+
+.matchInfoContainer {
+    display: flex;
+}
+
+.matchInfo {
+    flex: 1;
+    justify-content: center ;
+}
+
+.statsBtn,
+.scoresBtn {
+    background-color: #141414;
+    color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid white;
+}
+
+.statsBtn:hover,
+.scoresBtn:hover {
+    background-color: whitesmoke;
+    color: black
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.loadingMatchStatsContainer {
+    display: flex;
+    border: 2px solid white;
+    flex: 0.5;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    height: 50%;
+    background-color: #141414;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1350px) {
+    .match {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .loadingMatchStatsContainer {
+        width: 74%;
+        padding: 100px;
+    }
+} 
+
+
+@media (max-width: 650px) {
+
+    .matchDetails {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .matchInfo {
+        font-size: 7px;
+    }
+
+    .homeTeamContainer img,
+    .awayTeamContainer img {
+        height: 10px;
+    } 
+
+    .homeTeamInfo,
+    .awayTeamInfo {
+        align-items: center;
+        margin-bottom: 10px;
+    } 
+   
+    .homeTeamInfo h3,
+    .awayTeamInfo h3 {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .awayTeamGoalScorers p,
+    .homeTeamGoalScorers p {
+        font-size: 9px;
+    }
+
+    .awayTeamGoalScorers,
+    .homeTeamGoalScorers {
+        margin: 0;
+    }
+
+    .match {
+        max-width: 80%;
+        margin: 10px;
+    }
+
+    .statsBtn,
+    .scoresBtn {
+        font-size: 7px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .statsCard {
+        max-width: 80%;
+    }
+
+    .loadingMatchStatsContainer {
+        width: 80%;
+        padding: 100px;
+    }
+
+    td {
+        font-size: 9px
+    }
+
+    td > img {
+        width: 15px;
+    }
+
+}
+
+@media (max-width: 318px) {
+    .homeTeamInfo h3,
+    .awayTeamInfo h3 {
+        font-size: 7px;
+        margin: 0;
+    }
+
+    .awayTeamGoalScorers p,
+    .homeTeamGoalScorers p {
+        font-size: 7px;
+    }
+}
