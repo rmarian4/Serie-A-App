@@ -109,8 +109,23 @@ namespace SeriaAScoreApi.Controllers
         [HttpGet("matches/{matchDay}/{homeTeam}/{awayTeam}")]
         public async Task<ActionResult<MatchStatistics>> FetchMatchStatistics(int matchDay, string homeTeam, string awayTeam)
         {
-            var urlHomeTeam = homeTeam.ToLower().Replace(' ', '-');
-            var urlAwayTeam = awayTeam.ToLower().Replace(' ', '-');
+            string urlHomeTeam;
+            string urlAwayTeam;
+
+            if(homeTeam.Equals("Hellas Verona"))
+            {
+                urlHomeTeam = "verona";
+                urlAwayTeam = awayTeam.ToLower().Replace(' ', '-');
+            } else if (awayTeam.Equals("Hellas Verona"))
+            {
+                urlAwayTeam = "verona";
+                urlHomeTeam = homeTeam.ToLower().Replace(' ', '-');
+            } else
+            {
+                urlHomeTeam = homeTeam.ToLower().Replace(' ', '-');
+                urlAwayTeam = awayTeam.ToLower().Replace(' ', '-');
+            }
+            
 
             var helper = new ProcessMatchDayData();
             var matchStats = await helper.SetMatchStatistics(matchDay, urlHomeTeam, urlAwayTeam);
